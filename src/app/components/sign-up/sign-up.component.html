@@ -1,0 +1,11 @@
+<div class="signup-container">
+  <h2>Sign up for your MyForum account</h2>
+
+  <input [(ngModel)]="model.displayName" type="text" class="input-field" placeholder="User Name" required>
+  <input [(ngModel)]="model.password" type="password" class="input-field" placeholder="Password" required>
+  <input [(ngModel)]="repeatPass" type="password" class="input-field" placeholder="Repeat Password" required>
+  <input [(ngModel)]="model.email" type="email" class="input-field" placeholder="Email" required>
+
+  <button class="signup" (click)="Submit()">submit</button>
+  <p>Already have an account? <a [routerLink]="['/login']">LogIn!</a></p>
+</div>

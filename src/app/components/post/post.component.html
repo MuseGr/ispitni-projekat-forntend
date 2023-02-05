@@ -1,0 +1,19 @@
+<div class="post-box">
+  <div class="post-info">
+    <div class="user-image">
+      <img [src]="post.authorProfilePicture" alt="">
+    </div>
+    <h4>{{post.author}}</h4>
+    <p>{{formatedDate}}</p>
+  </div>
+  <div class="title-box">
+    <h2>{{post.title}}</h2>
+  </div>
+  <div class="content-box">
+    {{post.content}}
+  </div>
+  <div class="image"
+       *ngIf="post.imageURL != ''">
+    <img src={{post.imageURL}} alt="">
+  </div>
+</div>

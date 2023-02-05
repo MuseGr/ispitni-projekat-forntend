@@ -1,0 +1,84 @@
+@import url('https://css.gg/search.css');
+.navbar{
+  margin-top: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  width: 98vw;
+  background-color: rgba(37, 37, 37);
+  /* border: 1px solid #ffffff; */
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 040) 0px 1px 20px;
+}
+
+.logo{
+  margin-left: 1.5rem;
+  cursor: pointer;
+  width: 150px;
+}
+.logo-text{
+  color: whitesmoke;
+}
+.logo-link{
+  text-decoration: none;
+  display: flex;
+}
+
+.search{
+  border-radius: 25px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  border: 1.5px solid  whitesmoke;
+}
+.gg-search{
+  margin-right: 0.5rem;
+  margin-left: 0.25rem;
+  color: whitesmoke;
+}
+.search-input{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: large;
+  text-align: center;
+  margin-right: 1rem;
+}
+.search-input::placeholder{
+  color: rgba(245, 245, 245, 0.695);
+}
+.search-input:focus{
+  border: none;
+  outline: none;
+  color:whitesmoke;
+}
+.search-input:focus::placeholder{
+  color: transparent;
+}
+.profile{
+  margin-right: 1.5rem;
+  text-align: right;
+  width: 150px;
+}
+.profile-signup{
+  text-decoration: none;
+  font-size: large;
+  color: whitesmoke;
+}
+
+.profile-img-link{
+  height: 50px;
+  width: 150px;
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-img-link img{
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-top: 5px;
+}

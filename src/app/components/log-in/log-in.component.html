@@ -1,0 +1,12 @@
+<div class="login-container">
+  <h2>Log In to your MyForum account</h2>
+  <input [(ngModel)]="model.email" type="text" class="input-field"
+           placeholder="Email">
+  <input [(ngModel)]="model.password" type="password" class="input-field"
+           placeholder="Password">
+
+  <button class="signup" (click)="Submit()">Login</button>
+  <!-- <button class="signup" (click)="LogOut()">Remove</button>
+  <button class="signup" (click)="Proba()">Proba</button> -->
+  <p>Don't have an account? <a [routerLink]="['/sign-up']">SignUp!</a></p>
+</div>

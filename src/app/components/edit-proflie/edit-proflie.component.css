@@ -1,0 +1,126 @@
+.container{
+  margin-top: 2vh;
+  width: 60vw;
+  height: auto;
+  background-color: rgba(37, 37, 37);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 040) 0px 1px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.user-information-main{
+  width: 60vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+.profile-image-container{
+  height: 150px;
+  width: 150px;
+  background-color: whitesmoke;
+  margin-left: 2rem;
+  border: 3px solid whitesmoke;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.profile-image-container img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.user-name-holder{
+  height: 150px;
+  display: flex;
+  margin-left: 2rem;
+  width: 47vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-name-holder h3{
+  margin-top: auto;
+  color: whitesmoke;
+  font-size: 2.5rem;
+}
+.buttons-container{
+  width: 40px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.user-name-holder img{
+  height: 40px;
+  width: 40px;
+}
+
+/* . */
+
+.user-information-expand{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-information-separator{
+  width: 59vw;
+  height: 0.2rem;
+  background-color: whitesmoke;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+.user-informatin-field{
+  width: 57vw;
+  height: 4rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.user-informatin-field p{
+  color: whitesmoke;
+  font-size: 18px;
+  width: 150px;
+}
+.user-informatin-field input{
+  font-size: 19px;
+  padding: 0.4rem 1rem;
+  border: 1px solid whitesmoke;
+  border-radius: 0.8rem;
+  background-color: transparent;
+  color: whitesmoke;
+  font-weight: lighter;
+  width: 350px;
+}
+.user-informatin-field input::placeholder{
+  color: rgba(245, 245, 245, 0.695);
+}
+.user-informatin-field input:focus{
+  outline: none;
+  color:whitesmoke;
+}
+.user-informatin-field input:focus::placeholder{
+  color: transparent;
+}
+
+.user-information-expand button{
+  width: 130px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: 2rem;
+  font-size: 22px;
+  border-radius: 0.8rem;
+  border: 2px solid whitesmoke;
+  background-color: transparent;
+  color: whitesmoke;
+  margin-bottom: 2rem;
+}
+.user-information-expand button:hover{
+  background-color: rgba(245, 245, 245);
+  color: rgba(37, 37, 37);
+}
+
+.colapsed{
+  display: none;
+}

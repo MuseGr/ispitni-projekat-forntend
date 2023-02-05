@@ -1,0 +1,104 @@
+@import url('https://css.gg/math-plus.css');
+@import url('https://css.gg/close.css');
+
+.create-post-box{
+  width: 60vw;
+  background-color: rgba(37, 37, 37);
+  box-shadow: rgba(0, 0, 0, 040) 0px 1px 20px;
+  margin-top: 1rem;
+  border-bottom: 1px solid whitesmoke;
+  border-radius: 1rem 1rem 0 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.create-post-box h3{
+  color: whitesmoke;
+  margin: 5px;
+}
+.create-post{
+  height: 50px;
+  width: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.create-post .gg-math-plus{
+  margin: auto;
+  color: whitesmoke;
+}
+.create-post .gg-close{
+  margin: auto;
+  color: whitesmoke;
+}
+
+.create-post-dropdown{
+  width: 60vw;
+  background-color: rgba(37, 37, 37);
+  box-shadow: rgba(0, 0, 0, 040) 0px 1px 20px;
+  border-radius: 0 0 1rem 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.create-post-dropdown .title{
+  font-size: x-large;
+  color: whitesmoke;
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  width: 800px;
+  margin-left: 4rem;
+  margin-right: auto;
+}
+.create-post-dropdown .title:focus{
+  outline: none;
+}
+.create-post-dropdown .title::placeholder{
+  color: rgba(245, 245, 245, 0.793);
+}
+.create-post-dropdown .title:focus::placeholder{
+  color: transparent;
+}
+.create-post-dropdown .content{
+  font-size: x-large;
+  color: whitesmoke;
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  width: 990px;
+  margin-top: 0.8rem;
+  margin-bottom: 0.5rem;
+  resize: none;
+}
+.create-post-dropdown .content:focus{
+  outline: none;
+}
+.create-post-dropdown .content::placeholder{
+  color: rgba(245, 245, 245, 0.793);
+}
+.create-post-dropdown .content:focus::placeholder{
+  color: transparent;
+}
+
+.create-post-dropdown button{
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+  color: rgba(37, 37, 37);
+  border-radius: 0.8rem;
+  font-size: x-large;
+  padding: 0.5rem 3rem;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: 65px;
+  cursor: pointer;
+}
+.create-post-dropdown button:hover{
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+}

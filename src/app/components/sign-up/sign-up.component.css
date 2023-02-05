@@ -1,0 +1,70 @@
+.signup-container{
+  margin-top: 2vh;
+  width: 50vw;
+  height: 70vh;
+  background-color: rgba(37, 37, 37);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 040) 0px 1px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup-container h2{
+  color: whitesmoke;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  font-size: xx-large;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+.input-field{
+  margin: 10px, 0;
+}
+
+.signup{
+  width: 150px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: large;
+  border-radius: 0.8rem;
+  border: 1px solid whitesmoke;
+  background-color: transparent;
+  color: whitesmoke;
+}
+.signup:hover{
+  background-color: rgba(245, 245, 245);
+  color: rgba(37, 37, 37);
+}
+
+p{
+  margin-top: 0.8rem;
+  color: whitesmoke;
+}
+a{
+  color: whitesmoke;
+}
+
+.input-field{
+  margin-bottom: 1rem;
+  font-size: x-large;
+  padding: 0.4rem 1rem;
+  border: 1px solid whitesmoke;
+  border-radius: 0.8rem;
+  background-color: transparent;
+  color: whitesmoke;
+  width: 400px;
+}
+.input-field::placeholder{
+  color: rgba(245, 245, 245, 0.695);
+}
+.input-field:focus{
+  outline: none;
+  color:whitesmoke;
+}
+.input-field:focus::placeholder{
+  color: transparent;
+}
+

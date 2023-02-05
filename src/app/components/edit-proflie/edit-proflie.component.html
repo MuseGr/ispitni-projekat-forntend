@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="user-information-main">
+    <div class="profile-image-container">
+      <img [src]="user.profileImageUrl" alt="">
+    </div>
+    <div class="user-name-holder">
+      <h3>{{user.displayName}}</h3>
+        <div class="buttons-container">
+          <img src="../../../assets/exitIcon.png" (click)="auth.LogOut()">
+          <img src="../../../assets/editIcon.png" (click)="expandEditProfile()">
+        </div>
+    </div>
+  </div>
+  <div [className]="!infoColapsed ? 'user-information-expand' : 'colapsed'">
+    <div class="user-information-separator"></div>
+    <div class="user-informatin-field">
+      <p>Display Name</p>
+      <input type="text" [(ngModel)]="user.displayName">
+    </div>
+    <div class="user-informatin-field">
+      <p>Email</p>
+      <input type="email" [(ngModel)]="user.email">
+    </div>
+    <div class="user-informatin-field">
+      <p>Profile Picture</p>
+      <input type="text" [(ngModel)]="user.profileImageUrl">
+    </div>
+    <button (click)="SaveChanges()">Save</button>
+  </div>
+</div>
+<!-- lista postova -->
+<posts-list [page]="'profile'"></posts-list>

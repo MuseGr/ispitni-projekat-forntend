@@ -1,0 +1,30 @@
+<!-- Create post -->
+<div class="create-post-box">
+  <h3 *ngIf="user != null">Have something to share {{user.displayName}}? Let's create new post!</h3>
+  <button class="create-post"
+          (click)="showHideDropDown()"
+          *ngIf="!createPostDropdown">
+    <i class="gg-math-plus"></i>
+  </button>
+  <button class="create-post"
+          (click)="showHideDropDown()"
+          *ngIf="createPostDropdown">
+    <i class="gg-close"></i>
+  </button>
+</div>
+<div class="create-post-dropdown"
+      [ngStyle]="{'display': (createPostDropdown) ? 'flex' : 'none'}">
+  <input type="text" class="title"
+         placeholder="Type creative Title"
+         [(ngModel)]="postDraft.title">
+  <textarea name="Text1" class="content"
+            rows="5" placeholder="Here you can type interesting content!"
+            [(ngModel)]="postDraft.content"></textarea>
+  <input type="text" class="title"
+         placeholder="Add any image link"
+         [(ngModel)]="postDraft.imageURL">
+  <button (click)="CreatePost()">Post</button>
+</div>
+
+<!-- Posts -->
+<posts-list [page]="'home'"></posts-list>
